@@ -3,8 +3,8 @@
 
 Feel free to use / modify for whatever splits & runs you want, this is just some examples to get started and show off the integration.
 
-## Setup
-Using the PogoChamp.asl file requires you to have UnityASL.bin in your `Livesplit/Components/` folder.  If it isn't working, a missing UnityASL is likely the problem.
+## Setup/Troubleshooting
+Using the PogoChamp.asl file requires you to have UnityASL.bin in your `Livesplit/Components/` folder.  If it isn't working, a missing UnityASL is likely the problem, you can download UnityASL.bin here: https://github.com/just-ero/asl-help/raw/main/libraries/UnityASL.bin
 
 ## Usage
 The PogoChamp.asl file has 5 different split patterns that you can pick from by going to `Edit Layout > Scriptable AutoSplitter`, the options are:
