@@ -14,7 +14,7 @@
     <Variables />
   </Metadata>
   <Offset>00:00:00</Offset>
-  <AttemptCount>0</AttemptCount>
+  <AttemptCount>2</AttemptCount>
   <AttemptHistory>
     <Attempt id="1" started="04/10/2022 19:28:52" isStartedSynced="True" ended="04/10/2022 19:31:10" isEndedSynced="True">
       <RealTime>00:02:18.5600000</RealTime>
@@ -2120,6 +2120,12 @@
     <Attempt id="2094" started="04/11/2022 21:19:37" isStartedSynced="True" ended="04/11/2022 21:34:41" isEndedSynced="True" />
     <Attempt id="2095" started="04/11/2022 21:41:24" isStartedSynced="True" ended="04/11/2022 21:41:40" isEndedSynced="True" />
     <Attempt id="2096" started="04/11/2022 21:49:25" isStartedSynced="True" ended="04/11/2022 21:49:28" isEndedSynced="True" />
+    <Attempt id="2097" started="04/13/2022 21:15:10" isStartedSynced="True" ended="04/13/2022 21:15:29" isEndedSynced="True">
+      <RealTime>00:00:18.5590000</RealTime>
+    </Attempt>
+    <Attempt id="2098" started="04/13/2022 21:15:30" isStartedSynced="True" ended="04/13/2022 21:15:44" isEndedSynced="True">
+      <RealTime>00:00:13.1700000</RealTime>
+    </Attempt>
   </AttemptHistory>
   <Segments>
     <Segment>
@@ -2268,6 +2274,24 @@
     </Segment>
     <Segment>
       <Name>191 Star Gate</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best" />
+      </SplitTimes>
+      <BestSegmentTime />
+      <SegmentHistory />
+    </Segment>
+    <Segment>
+      <Name>200 Star Gate</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best" />
+      </SplitTimes>
+      <BestSegmentTime />
+      <SegmentHistory />
+    </Segment>
+    <Segment>
+      <Name>210 Star Gate</Name>
       <Icon />
       <SplitTimes>
         <SplitTime name="Personal Best" />

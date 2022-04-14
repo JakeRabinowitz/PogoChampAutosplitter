@@ -76,10 +76,10 @@ startup
      * Gate star reqs (skipping the 1 star gate) as of 2022_04_11: 
      * 7, 15, 25, 36, 46, 56, 65, 77, 88, 100, 110, 120, 130, 150, 168, 180, 191
      */
-    vars.gateBreakpoints = new int[] { 7, 15, 25, 36, 46, 56, 65, 77, 88, 100, 110, 120, 130, 150, 168, 180, 191 };
+    vars.gateBreakpoints = new int[] { 7, 15, 25, 36, 46, 56, 65, 77, 88, 100, 110, 120, 130, 150, 168, 180, 191, 200, 210 };
 
     settings.Add("pick_one", true, "Pick ONE of the following:");
-    settings.Add("gates", true, "Split on gates (18 splits)", "pick_one");
+    settings.Add("gates", true, "Split on gates (20 splits)", "pick_one");
     settings.SetToolTip("gates", "Split whenever you get enough stars to open the next gate. Skips the first 1-star gate.");
     // foreach (int breakpoint in vars.gateBreakpoints)
     // {
@@ -199,7 +199,7 @@ split
         }
 
         // If you finished the final level, that's the final split
-        if (vars.Unity["gameState"].Current == "Victory" && vars.Unity["levelIndex"].Current == 100) // level 101's index is 100.
+        if (vars.Unity["gameState"].Changed && vars.Unity["gameState"].Current == "Victory" && vars.Unity["levelIndex"].Current == 100) // level 101's index is 100.
         {
             return true;
         }
@@ -220,7 +220,7 @@ split
         }
         
         // If you finished the final level, that's the final split
-        if (vars.Unity["gameState"].Current == "Victory" && vars.Unity["levelIndex"].Current == 100) // level 101's index is 100.
+        if (vars.Unity["gameState"].Changed && vars.Unity["gameState"].Current == "Victory" && vars.Unity["levelIndex"].Current == 100) // level 101's index is 100.
         {
             return true;
         }
