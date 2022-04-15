@@ -123,7 +123,7 @@ init
         vars.Unity.Make<bool>(myClass.Static, myClass["isLoading"]).Name = "isLoading";
         vars.Unity.MakeString(myClass.Static, myClass["gameState"]).Name = "gameState";
         
-        vars.Unity.Make<int>(myClass.Static, myClass["isInLevel"]).Name = "isInLevel";
+        vars.Unity.Make<bool>(myClass.Static, myClass["isInLevel"]).Name = "isInLevel";
         vars.Unity.Make<int>(myClass.Static, myClass["levelIndex"]).Name = "levelIndex";
 
         vars.Unity.Make<float>(myClass.Static, myClass["attemptTime"]).Name = "attemptTime";
