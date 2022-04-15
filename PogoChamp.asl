@@ -32,13 +32,6 @@
     public static float attemptTime = 0f;
 
     /// <summary>
-    /// The in-game time that's shown when the in-game "Speedrun Timer" is on.
-    /// The in-game timer includes any time where your character is alive in a level (including pauses),
-    /// but does not include things like navigating the level select or cutscenes.
-    /// </summary>
-    public static float speedrunTime = 0f;
-
-    /// <summary>
     /// The total playtime of this save file that you are playing on.  This is the same time that is shown
     /// in the save file selection menu.
     /// </summary>
@@ -107,9 +100,6 @@ startup
     //     settings.Add("stars_" + starCounts.ToString(), true, "Level " + starCounts.ToString(), "stars");
     // }
 
-    settings.Add("vs_mode", false, "VS Mode splits.", "pick_one");
-    settings.SetToolTip("vs_mode", "Split on every attempt, reset splits on entering a level. Uses attempt time instead of realtime.");
-
     vars.nextSplitLevelIndex = 9;
     vars.justUnlockedGate = false;
 }
@@ -127,7 +117,6 @@ init
         vars.Unity.Make<int>(myClass.Static, myClass["levelIndex"]).Name = "levelIndex";
 
         vars.Unity.Make<float>(myClass.Static, myClass["attemptTime"]).Name = "attemptTime";
-        vars.Unity.Make<float>(myClass.Static, myClass["speedrunTime"]).Name = "speedrunTime";
         vars.Unity.Make<float>(myClass.Static, myClass["totalPlaytime"]).Name = "totalPlaytime";
 
         vars.Unity.Make<int>(myClass.Static, myClass["starCount"]).Name = "starCount";
@@ -149,22 +138,14 @@ update
 
 start
 {
-    if (settings["vs_mode"])
+    /* Leaving the main menu means starting the game, if you start the game with an in-game
+    * speedrun time of 0, you're clearly playing a reset file.
+    */
+    if (vars.Unity["gameState"].Current != "Main Menu" && vars.Unity["totalPlaytime"].Current == 0) 
     {
-        var gameState = vars.Unity["gameState"];
-        return gameState.Changed && gameState.Old == "Loading" && gameState.Current == "Playing";
-    }
-    else
-    {
-        /* Leaving the main menu means starting the game, if you start the game with an in-game
-        * speedrun time of 0, you're clearly playing a reset file.
-        */
-        if (vars.Unity["gameState"].Current != "Main Menu" && vars.Unity["totalPlaytime"].Current == 0) 
-        {
-            vars.nextSplitLevelIndex = 9; // Reset the next split level index.
-            vars.justUnlockedGate = false;
-            return true;
-        }
+        vars.nextSplitLevelIndex = 9; // Reset the next split level index.
+        vars.justUnlockedGate = false;
+        return true;
     }
 }
 
@@ -277,14 +258,6 @@ split
             }
         }
     }
-    else if (settings["vs_mode"])
-    {
-        var gameState = vars.Unity["gameState"];
-        if (gameState.Changed && gameState.Current == "Playing" && vars.Unity["attemptTime"].Old > 0)
-        {
-            return true;
-        }
-    }
 }
 
 isLoading
@@ -294,18 +267,10 @@ isLoading
 
 reset 
 {
-    if (settings["vs_mode"])
-    {
-        var gameState = vars.Unity["gameState"];
-        return gameState.Changed && gameState.Current == "Level Select";
-    }
-    else
-    {
-        /* If you're in the main menu with a playtime of 0, you probably just reset your save file,
-        * and you definitely aren't in a current run, so reset the timer.
-        */
-        return vars.Unity["gameState"].Current == "Main Menu" && vars.Unity["totalPlaytime"].Current == 0;
-    }
+    /* If you're in the main menu with a playtime of 0, you probably just reset your save file,
+    * and you definitely aren't in a current run, so reset the timer.
+    */
+    return vars.Unity["gameState"].Current == "Main Menu" && vars.Unity["totalPlaytime"].Current == 0;
 }
 
 exit
@@ -316,12 +281,4 @@ exit
 shutdown
 {
     vars.Unity.Reset();
-}
-
-gameTime
-{
-    if (settings["vs_mode"])
-    {
-        return TimeSpan.FromSeconds(vars.Unity["attemptTime"].Current);
-    }
 }
