@@ -3,7 +3,8 @@
   <GameIcon />
   <GameName>PogoChamp</GameName>
   <CategoryName>Demo 100%</CategoryName>
-  <LayoutPath>?default</LayoutPath>
+  <LayoutPath>
+  </LayoutPath>
   <Metadata>
     <Run id="" />
     <Platform usesEmulator="False">
@@ -16,10 +17,8 @@
   <AttemptCount>0</AttemptCount>
   <AttemptHistory>
     <Attempt id="1" started="04/10/2022 19:28:52" isStartedSynced="True" ended="04/10/2022 19:31:10" isEndedSynced="True">
-      <RealTime>00:02:18.5600000</RealTime>
     </Attempt>
     <Attempt id="2" started="04/10/2022 19:31:14" isStartedSynced="True" ended="04/10/2022 19:31:16" isEndedSynced="True">
-      <RealTime>00:00:01.9740000</RealTime>
     </Attempt>
     <Attempt id="3" started="04/11/2022 16:02:00" isStartedSynced="True" ended="04/11/2022 16:17:00" isEndedSynced="True" />
     <Attempt id="4" started="04/11/2022 16:17:08" isStartedSynced="True" ended="04/11/2022 16:17:08" isEndedSynced="True" />
@@ -2115,301 +2114,69 @@
     <Attempt id="2090" started="04/11/2022 21:01:00" isStartedSynced="True" ended="04/11/2022 21:01:02" isEndedSynced="True" />
     <Attempt id="2091" started="04/11/2022 21:01:10" isStartedSynced="True" ended="04/11/2022 21:04:22" isEndedSynced="True" />
     <Attempt id="2092" started="04/11/2022 21:06:00" isStartedSynced="True" ended="04/11/2022 21:13:12" isEndedSynced="True" />
-    <Attempt id="2093" started="04/11/2022 21:13:32" isStartedSynced="False" ended="04/11/2022 21:19:22" isEndedSynced="True" />
-    <Attempt id="2094" started="04/11/2022 21:19:37" isStartedSynced="True" ended="04/11/2022 21:34:41" isEndedSynced="True" />
-    <Attempt id="2095" started="04/11/2022 21:41:24" isStartedSynced="True" ended="04/11/2022 21:41:40" isEndedSynced="True" />
-    <Attempt id="2096" started="04/11/2022 21:49:25" isStartedSynced="True" ended="04/11/2022 21:49:28" isEndedSynced="True" />
-    <Attempt id="2097" started="04/13/2022 21:15:10" isStartedSynced="True" ended="04/13/2022 21:15:29" isEndedSynced="True">
-      <RealTime>00:00:18.5590000</RealTime>
-    </Attempt>
-    <Attempt id="2098" started="04/13/2022 21:15:30" isStartedSynced="True" ended="04/13/2022 21:15:44" isEndedSynced="True">
-      <RealTime>00:00:13.1700000</RealTime>
-    </Attempt>
-    <Attempt id="2099" started="04/16/2022 17:24:36" isStartedSynced="False" ended="04/16/2022 17:24:38" isEndedSynced="False" />
-    <Attempt id="2100" started="04/16/2022 17:26:30" isStartedSynced="True" ended="04/16/2022 17:26:42" isEndedSynced="True" />
-    <Attempt id="2101" started="04/16/2022 17:26:44" isStartedSynced="True" ended="04/16/2022 17:27:14" isEndedSynced="True" />
-    <Attempt id="2102" started="04/16/2022 17:27:18" isStartedSynced="True" ended="04/16/2022 17:28:28" isEndedSynced="True" />
-    <Attempt id="2103" started="04/16/2022 17:28:30" isStartedSynced="True" ended="04/16/2022 17:55:37" isEndedSynced="True">
-      <RealTime>00:27:07.1190000</RealTime>
-      <GameTime>00:25:47.4230000</GameTime>
-    </Attempt>
-    <Attempt id="2104" started="04/17/2022 23:44:44" isStartedSynced="True" ended="04/18/2022 00:10:47" isEndedSynced="True">
-      <RealTime>00:26:03.3500000</RealTime>
-      <GameTime>00:24:53.0240000</GameTime>
-    </Attempt>
   </AttemptHistory>
   <Segments>
     <Segment>
-      <Name>7 Star Gate</Name>
+      <Name>15 Stars</Name>
       <Icon />
       <SplitTimes>
-        <SplitTime name="Personal Best">
-          <GameTime>00:00:22.5740000</GameTime>
-        </SplitTime>
+        <SplitTime name="Personal Best" />
       </SplitTimes>
-      <BestSegmentTime>
-        <GameTime>00:00:22.5740000</GameTime>
-      </BestSegmentTime>
+      <BestSegmentTime />
       <SegmentHistory />
     </Segment>
     <Segment>
-      <Name>15 Star Gate</Name>
+      <Name>30 Stars</Name>
       <Icon />
       <SplitTimes>
-        <SplitTime name="Personal Best">
-          <GameTime>00:01:00.0430000</GameTime>
-        </SplitTime>
+        <SplitTime name="Personal Best" />
       </SplitTimes>
-      <BestSegmentTime>
-        <GameTime>00:00:37.4690000</GameTime>
-      </BestSegmentTime>
+      <BestSegmentTime />
       <SegmentHistory />
     </Segment>
     <Segment>
       <Name>45 Stars</Name>
       <Icon />
       <SplitTimes>
-        <SplitTime name="Personal Best">
-          <GameTime>00:01:31.3460000</GameTime>
-        </SplitTime>
+        <SplitTime name="Personal Best" />
       </SplitTimes>
-      <BestSegmentTime>
-        <GameTime>00:00:31.3030000</GameTime>
-      </BestSegmentTime>
+      <BestSegmentTime />
       <SegmentHistory />
     </Segment>
     <Segment>
       <Name>60 Stars</Name>
       <Icon />
       <SplitTimes>
-        <SplitTime name="Personal Best">
-          <GameTime>00:02:01.5200000</GameTime>
-        </SplitTime>
+        <SplitTime name="Personal Best" />
       </SplitTimes>
-      <BestSegmentTime>
-        <GameTime>00:00:29.4600000</GameTime>
-      </BestSegmentTime>
+      <BestSegmentTime />
       <SegmentHistory />
     </Segment>
     <Segment>
       <Name>75 Stars</Name>
       <Icon />
       <SplitTimes>
-        <SplitTime name="Personal Best">
-          <GameTime>00:02:45.8930000</GameTime>
-        </SplitTime>
+        <SplitTime name="Personal Best" />
       </SplitTimes>
-      <BestSegmentTime>
-        <GameTime>00:00:44.3730000</GameTime>
-      </BestSegmentTime>
+      <BestSegmentTime />
       <SegmentHistory />
     </Segment>
     <Segment>
       <Name>90 Stars</Name>
       <Icon />
       <SplitTimes>
-        <SplitTime name="Personal Best">
-          <GameTime>00:03:27.2240000</GameTime>
-        </SplitTime>
+        <SplitTime name="Personal Best" />
       </SplitTimes>
-      <BestSegmentTime>
-        <GameTime>00:00:41.3310000</GameTime>
-      </BestSegmentTime>
+      <BestSegmentTime />
       <SegmentHistory />
     </Segment>
     <Segment>
-      <Name>105 Stars - Complete</Name>
+      <Name>105 Stars - Coimplete</Name>
       <Icon />
       <SplitTimes>
-        <SplitTime name="Personal Best">
-          <GameTime>00:04:07.0890000</GameTime>
-        </SplitTime>
+        <SplitTime name="Personal Best" />
       </SplitTimes>
-      <BestSegmentTime>
-        <GameTime>00:00:37.0650000</GameTime>
-      </BestSegmentTime>
-      <SegmentHistory />
-    </Segment>
-    <Segment>
-      <Name>
-      </Name>
-      <Icon />
-      <SplitTimes>
-        <SplitTime name="Personal Best">
-          <GameTime>00:05:06.2800000</GameTime>
-        </SplitTime>
-      </SplitTimes>
-      <BestSegmentTime>
-        <GameTime>00:00:59.1910000</GameTime>
-      </BestSegmentTime>
-      <SegmentHistory />
-    </Segment>
-    <Segment>
-      <Name>
-      </Name>
-      <Icon />
-      <SplitTimes>
-        <SplitTime name="Personal Best">
-          <GameTime>00:06:30.3690000</GameTime>
-        </SplitTime>
-      </SplitTimes>
-      <BestSegmentTime>
-        <GameTime>00:01:07.5870000</GameTime>
-      </BestSegmentTime>
-      <SegmentHistory />
-    </Segment>
-    <Segment>
-      <Name>
-      </Name>
-      <Icon />
-      <SplitTimes>
-        <SplitTime name="Personal Best">
-          <GameTime>00:07:43.5400000</GameTime>
-        </SplitTime>
-      </SplitTimes>
-      <BestSegmentTime>
-        <GameTime>00:01:12.3360000</GameTime>
-      </BestSegmentTime>
-      <SegmentHistory />
-    </Segment>
-    <Segment>
-      <Name>
-      </Name>
-      <Icon />
-      <SplitTimes>
-        <SplitTime name="Personal Best">
-          <GameTime>00:09:09.6460000</GameTime>
-        </SplitTime>
-      </SplitTimes>
-      <BestSegmentTime>
-        <GameTime>00:00:43.6700000</GameTime>
-      </BestSegmentTime>
-      <SegmentHistory />
-    </Segment>
-    <Segment>
-      <Name>
-      </Name>
-      <Icon />
-      <SplitTimes>
-        <SplitTime name="Personal Best">
-          <GameTime>00:09:53.5880000</GameTime>
-        </SplitTime>
-      </SplitTimes>
-      <BestSegmentTime>
-        <GameTime>00:00:43.9420000</GameTime>
-      </BestSegmentTime>
-      <SegmentHistory />
-    </Segment>
-    <Segment>
-      <Name>
-      </Name>
-      <Icon />
-      <SplitTimes>
-        <SplitTime name="Personal Best">
-          <GameTime>00:11:15.9940000</GameTime>
-        </SplitTime>
-      </SplitTimes>
-      <BestSegmentTime>
-        <GameTime>00:01:11.2670000</GameTime>
-      </BestSegmentTime>
-      <SegmentHistory />
-    </Segment>
-    <Segment>
-      <Name>
-      </Name>
-      <Icon />
-      <SplitTimes>
-        <SplitTime name="Personal Best">
-          <GameTime>00:13:18.9020000</GameTime>
-        </SplitTime>
-      </SplitTimes>
-      <BestSegmentTime>
-        <GameTime>00:02:02.9080000</GameTime>
-      </BestSegmentTime>
-      <SegmentHistory />
-    </Segment>
-    <Segment>
-      <Name>
-      </Name>
-      <Icon />
-      <SplitTimes>
-        <SplitTime name="Personal Best">
-          <GameTime>00:15:37.0430000</GameTime>
-        </SplitTime>
-      </SplitTimes>
-      <BestSegmentTime>
-        <GameTime>00:01:52.7490000</GameTime>
-      </BestSegmentTime>
-      <SegmentHistory />
-    </Segment>
-    <Segment>
-      <Name>
-      </Name>
-      <Icon />
-      <SplitTimes>
-        <SplitTime name="Personal Best">
-          <GameTime>00:16:48.9570000</GameTime>
-        </SplitTime>
-      </SplitTimes>
-      <BestSegmentTime>
-        <GameTime>00:01:11.9140000</GameTime>
-      </BestSegmentTime>
-      <SegmentHistory />
-    </Segment>
-    <Segment>
-      <Name>
-      </Name>
-      <Icon />
-      <SplitTimes>
-        <SplitTime name="Personal Best">
-          <GameTime>00:18:02.7170000</GameTime>
-        </SplitTime>
-      </SplitTimes>
-      <BestSegmentTime>
-        <GameTime>00:01:07.0650000</GameTime>
-      </BestSegmentTime>
-      <SegmentHistory />
-    </Segment>
-    <Segment>
-      <Name>
-      </Name>
-      <Icon />
-      <SplitTimes>
-        <SplitTime name="Personal Best">
-          <GameTime>00:19:00.5510000</GameTime>
-        </SplitTime>
-      </SplitTimes>
-      <BestSegmentTime>
-        <GameTime>00:00:57.8340000</GameTime>
-      </BestSegmentTime>
-      <SegmentHistory />
-    </Segment>
-    <Segment>
-      <Name>
-      </Name>
-      <Icon />
-      <SplitTimes>
-        <SplitTime name="Personal Best">
-          <GameTime>00:20:06.9730000</GameTime>
-        </SplitTime>
-      </SplitTimes>
-      <BestSegmentTime>
-        <GameTime>00:01:06.4220000</GameTime>
-      </BestSegmentTime>
-      <SegmentHistory />
-    </Segment>
-    <Segment>
-      <Name>
-      </Name>
-      <Icon />
-      <SplitTimes>
-        <SplitTime name="Personal Best">
-          <GameTime>00:24:53.0240000</GameTime>
-        </SplitTime>
-      </SplitTimes>
-      <BestSegmentTime>
-        <GameTime>00:04:19.7970000</GameTime>
-      </BestSegmentTime>
+      <BestSegmentTime />
       <SegmentHistory />
     </Segment>
   </Segments>
@@ -2421,10 +2188,11 @@
     <Split>True</Split>
     <CustomSettings>
       <Setting id="pick_one" type="bool">True</Setting>
-      <Setting id="gates" type="bool">True</Setting>
+      <Setting id="gates" type="bool">False</Setting>
       <Setting id="levels" type="bool">False</Setting>
       <Setting id="stars" type="bool">False</Setting>
       <Setting id="rainbowGems" type="bool">False</Setting>
+      <Setting id="demo" type="bool">True</Setting>
     </CustomSettings>
   </AutoSplitterSettings>
 </Run>

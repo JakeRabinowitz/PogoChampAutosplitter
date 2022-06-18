@@ -2173,5 +2173,19 @@
       <SegmentHistory />
     </Segment>
   </Segments>
-  <AutoSplitterSettings />
-</Run>
+ <AutoSplitterSettings>
+    <Version>1.5</Version>
+    <ScriptPath>C:\Users\Jake\Desktop\Programming\PogoChamp AutoSplitter\LiveSplit_1.8.19\Components\PogoChamp.asl</ScriptPath>
+    <Start>True</Start>
+    <Reset>True</Reset>
+    <Split>True</Split>
+    <CustomSettings>
+      <Setting id="pick_one" type="bool">True</Setting>
+      <Setting id="gates" type="bool">False</Setting>
+      <Setting id="levels" type="bool">False</Setting>
+      <Setting id="stars" type="bool">True</Setting>
+      <Setting id="rainbowGems" type="bool">False</Setting>
+      <Setting id="demo" type="bool">False</Setting>
+    </CustomSettings>
+  </AutoSplitterSettings>
+  </Run>
