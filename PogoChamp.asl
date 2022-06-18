@@ -100,6 +100,10 @@ startup
     //     settings.Add("stars_" + starCounts.ToString(), true, "Level " + starCounts.ToString(), "stars");
     // }
 
+    settings.Add("demo", false, "DEMO: Split every 15 stars. (7 Splits).", "pick_one");
+    settings.SetToolTip("demo", "Split every 15 stars. The demo has a total of 105 stars.");
+
+
     vars.nextSplitLevelIndex = 9;
     vars.justUnlockedGate = false;
 }
@@ -258,6 +262,32 @@ split
             }
         }
     }
+    else if (settings["demo"])
+    {
+        var starCount = vars.Unity["starCount"];
+
+        if (starCount.Changed) 
+        {
+            // This only goes up to 250 because the last split requires 303 stars instead of 300.
+            for (int splitPoint = 15; splitPoint < 106; splitPoint += 15)
+            {
+                if (starCount.Current < splitPoint) {
+                    // Early exit if you don't have enough stars.
+                    return false;
+                }
+
+                if (starCount.Old < splitPoint && splitPoint <= starCount.Current)
+                {
+                    return true;
+                }
+            }
+
+            if (starCount.Current == 105)
+            {
+                return true;
+            }
+        }
+    } 
 }
 
 isLoading
