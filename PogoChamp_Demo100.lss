@@ -2171,7 +2171,7 @@
       <SegmentHistory />
     </Segment>
     <Segment>
-      <Name>105 Stars - Coimplete</Name>
+      <Name>105 Stars - Complete</Name>
       <Icon />
       <SplitTimes>
         <SplitTime name="Personal Best" />
@@ -2188,11 +2188,11 @@
     <Split>True</Split>
     <CustomSettings>
       <Setting id="pick_one" type="bool">True</Setting>
-      <Setting id="gates" type="bool">False</Setting>
+      <Setting id="gates" type="bool">True</Setting>
       <Setting id="levels" type="bool">False</Setting>
       <Setting id="stars" type="bool">False</Setting>
       <Setting id="rainbowGems" type="bool">False</Setting>
-      <Setting id="demo" type="bool">True</Setting>
+      <Setting id="demo" type="bool">False</Setting>
     </CustomSettings>
   </AutoSplitterSettings>
 </Run>
